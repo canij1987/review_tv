@@ -1,0 +1,29 @@
+body{
+	background-color: #f0f0f0;
+}
+div#header{
+	width: 85%;
+	margin-left:auto;
+	margin-right:auto;
+	min-width: 500px;
+}
+div#header > div{
+	min-height:40px;
+}
+div.header-top a{
+	color: #ff9100;
+}
+div.header-top{
+	background-color: #ebebeb;
+}
+div.header-middle{
+	padding: 20px 0;
+	background-color:white;
+}
+div#logo h5{
+	line-height:20px;
+	margin: 0;
+}
+div.header-bottom{
+	background-color: white;
+}
