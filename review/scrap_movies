@@ -1,0 +1,37 @@
+# -*- coding:utf-8 -*-
+import pickle
+"""import mechanize
+from bs4 import BeautifulSoup
+
+br = mechanize.Browser()
+pageUrls = ["http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=1", "http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=2", "http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=3","http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=4","http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=5","http://koreanz.com.au/%ed%95%9c%ea%b5%ad-%ec%98%81%ed%99%94/?pageid=6"]
+br.set_handle_robots(False)
+br.addheaders = [('referer', 'http://koreanz.com.au')]
+k = 0
+video_list = []
+for pageUrl in pageUrls:
+    res = br.open(pageUrl)
+    soup = BeautifulSoup(res.read(), 'lxml')
+    links = soup.select('a.kboard-item-thumbnail')
+
+    for link in links:
+        k += 1
+        try:
+            detail_page = 'http://koreanz.com.au' + link['href']
+            thumbnail_img = link.img['src']
+            res = br.open(detail_page)
+            soup = BeautifulSoup(res.read(), 'lxml')
+            name = soup.select('div.kboard-title')[0].text
+            poster_img = soup.select('p.thumbnail-area')[0].img['src']
+            video = soup.select('div.content-view > iframe')[5]
+            video_list.append((name, thumbnail_img, poster_img, str(video)))
+            print k, '번째 영화를 추가하고 있습니다.'
+        except:
+            print k, '번째 영화는 추가하지 못했습니다.'
+            continue
+
+f = open('video_list.txt', 'w')
+pickle.dump(video_list, f)
+f.close()"""
+f = open('video_list.txt', 'r')
+pickle.load(f)

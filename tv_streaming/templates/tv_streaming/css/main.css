@@ -1,11 +1,12 @@
 body{
 	background-color: #f0f0f0;
 }
-div#header{
-	width: 85%;
+div#body-wrap{
+	width: 80%;
 	margin-left:auto;
 	margin-right:auto;
 	min-width: 500px;
+	background-color: white;
 }
 div#header > div{
 	min-height:40px;
@@ -18,12 +19,42 @@ div.header-top{
 }
 div.header-middle{
 	padding: 20px 0;
-	background-color:white;
+	
 }
 div#logo h5{
 	line-height:20px;
 	margin: 0;
 }
 div.header-bottom{
-	background-color: white;
+	
+}
+ul#menubar{
+	background-color: #ff9100;
+	height: 40px;
+	padding-top: 10px;
+
+}
+ul#menubar > li{
+	list-style: none;
+	display: inline-block;
+	line-height: 20px;
+	border-left: 1px solid white;
+}
+ul#menubar > li > a{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	color: rgba(255, 255, 255, 0.9)
+}
+ul#menubar > li > a:hover{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	color: white;
+	text-decoration: none;
+}
+div#container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 }
